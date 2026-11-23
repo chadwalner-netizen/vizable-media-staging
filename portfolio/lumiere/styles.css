@@ -343,3 +343,37 @@ body:has(.contact-main) .contact-main{padding-bottom:60px}
 @media (max-width:570px) {
   .treatment-detail .treatment-image { height:240px; }
 }
+
+/* Final mobile services corrections: target image content rather than card padding. */
+@media (max-width: 800px) {
+  /* Original JPEGs have a dark strip at their upper edge. Crop it inside the frame. */
+  body:has(.treatment-list) .treatment-detail .treatment-image {
+    height: 240px !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    padding: 0 !important;
+    overflow: hidden;
+  }
+  body:has(.treatment-list) .treatment-detail .treatment-image img {
+    display: block;
+    height: calc(100% + 34px) !important;
+    width: 100%;
+    min-height: 0 !important;
+    max-height: none !important;
+    margin-top: -26px !important;
+    object-fit: cover;
+    object-position: center center;
+    transform: none !important;
+  }
+  /* Closing photo has its own dark upper strip: zoom the image, not the section. */
+  body:has(.treatment-list) .treat-cta {
+    background-size: cover, auto 135% !important;
+    background-position: center, center bottom !important;
+    padding-top: 34px !important;
+    padding-bottom: 42px !important;
+    border-top: 1px solid #8d6536 !important;
+  }
+  /* A shorter, more balanced services hero, without changing the homepage. */
+  body:has(.treatment-list) .treat-hero { min-height: 0 !important; }
+  body:has(.treatment-list) .treat-hero-inner { padding-top: 42px !important; padding-bottom: 42px !important; }
+}
