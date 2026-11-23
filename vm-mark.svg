@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 82" role="img" aria-label="Vizable Media VM logo">
+  <title>Vizable Media — Dynamic Circle VM</title>
+  <path d="M89 16C68 1 34 3 17 20C0 38 7 62 28 70c22 9 47-1 61-20" fill="none" stroke="#F7FEFF" stroke-width="4.2" stroke-linecap="round"/>
+  <path d="M56 9C77 3 102 12 101 31c0 19-18 31-30 35" fill="none" stroke="#FF664C" stroke-width="8" stroke-linecap="round"/>
+  <path d="M24 29h12l9 24 11-24h12L51 64H39z" fill="#FFFFFF"/>
+  <path d="M56 29h10l8 12 9-12h10l-7 35H76l3-18-6 9h-4l-6-9-2 18H51z" fill="#FF664C"/>
+</svg>

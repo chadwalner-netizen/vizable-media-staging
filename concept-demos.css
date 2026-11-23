@@ -1,0 +1,76 @@
+/* Three fictional, one-page design studies for Vizable Media. */
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0}a{text-decoration:none;color:inherit}img{max-width:100%;display:block}.demo-wrap{width:min(1240px,90%);margin:auto}
+.demo-banner{position:relative;z-index:10;padding:11px 0;background:#081d2f;color:#fff;font:700 11px/1.5 Arial,sans-serif;letter-spacing:1.3px}
+.demo-banner .demo-wrap{display:flex;justify-content:space-between;gap:20px;align-items:center}
+.demo-banner strong{color:#ffb19c}.demo-banner a{text-decoration:underline;text-underline-offset:4px;color:#f7b29e}
+.demo-banner a:hover{color:#fff}
+.demo-page :focus-visible{outline:3px solid #e87555;outline-offset:3px}
+.demo-nav{display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:82px}
+.demo-nav-links{display:flex;gap:30px;align-items:center;font:700 13px Arial}
+.demo-nav-links a:hover{text-decoration:underline;text-underline-offset:6px}
+.demo-cta{display:inline-block;border-radius:4px;padding:15px 21px;font:800 12px Arial;text-transform:uppercase;letter-spacing:.9px}
+.demo-services{padding:62px 0 75px}
+.demo-services h2{font:700 clamp(32px,4vw,48px)/1.12 Georgia;margin:0 0 13px}
+.demo-services>div>p{margin:0 0 30px;font:16px/1.7 Arial;max-width:650px}
+.demo-service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.demo-service-grid article{padding:26px;border-radius:9px}
+.demo-service-grid h3{font:700 23px Georgia;margin:15px 0 9px}
+.demo-service-grid p{font:14px/1.65 Arial;margin:0}
+.demo-service-grid b{font:700 25px Georgia}
+.demo-footer{padding:25px 0;text-align:center;font:12px/1.6 Arial}
+
+/* Palm & Stone: warm editorial garden */
+.demo-land{color:#18382b;background:#f6f1e6;font-family:Georgia,serif}
+.demo-land .demo-nav{background:#f6f1e6}
+.demo-land .demo-brand{font:700 24px Georgia;letter-spacing:2px}
+.demo-land .demo-brand span{color:#bca370}
+.demo-land .demo-cta{background:#dbb97b;color:#153325}
+.demo-land .demo-hero{height:min(650px,68vw);min-height:445px;position:relative;display:flex;align-items:center;color:white;background:linear-gradient(90deg,#061a11ed,#0e28136e 55%,transparent),url("demo-landscaping.jpg") center/cover}
+.demo-land .demo-hero-kicker{color:#eccf98;font:700 12px Arial;letter-spacing:2.4px}
+.demo-land .demo-hero h1{font:700 clamp(52px,6.8vw,90px)/1.01 Georgia;margin:20px 0;letter-spacing:-2px;max-width:800px}
+.demo-land .demo-hero p:not(.demo-hero-kicker){font:18px/1.65 Arial;max-width:510px;margin:0 0 30px;color:#f0eee3}
+.demo-land .demo-services h2{color:#1c3b2c}
+.demo-land .demo-service-grid article{background:#e9e4d5;border:1px solid #dcd5bf}
+.demo-land .demo-service-grid b{color:#8d7955}
+.demo-land .demo-footer{background:#142f23;color:#eedfc4}
+
+/* PureNest: airy, optimistic and modern */
+.demo-clean{color:#1d5265;background:#f7fcfb;font-family:Arial,sans-serif}
+.demo-clean .demo-nav{min-height:88px}
+.demo-clean .demo-brand{font:800 32px Arial;letter-spacing:-2px}
+.demo-clean .demo-brand span{color:#74b6ad}
+.demo-clean .demo-nav-links{color:#3f6572}
+.demo-clean .demo-cta{background:#1c5968;color:white;border-radius:25px}
+.demo-clean .demo-hero{padding:54px 0 84px}
+.demo-clean .demo-hero-layout{display:grid;grid-template-columns:44% 56%;gap:4%;align-items:center}
+.demo-clean .demo-hero-kicker{display:inline-block;background:#e3f1ec;color:#428280;border-radius:22px;padding:12px 16px;font:800 11px Arial;letter-spacing:1.4px}
+.demo-clean .demo-hero h1{font:800 clamp(50px,6.5vw,86px)/1.02 Arial;letter-spacing:-4px;margin:23px 0 22px}
+.demo-clean .demo-hero h1 em{font-style:normal;color:#80b4ab}
+.demo-clean .demo-hero p:not(.demo-hero-kicker){font:18px/1.65 Arial;color:#657c83;max-width:430px;margin-bottom:28px}
+.demo-clean .demo-hero-img{width:100%;height:510px;object-fit:cover;border-radius:45% 45% 10px 10px;box-shadow:0 20px 45px #28596626}
+.demo-clean .demo-services{background:#eaf5f3}
+.demo-clean .demo-services h2{font:800 clamp(32px,4vw,48px) Arial;letter-spacing:-1.5px}
+.demo-clean .demo-service-grid article{background:white;box-shadow:0 12px 20px #224c5c0e;border-radius:18px}
+.demo-clean .demo-service-grid h3{font:800 21px Arial}
+.demo-clean .demo-service-grid b{color:#81b6a9}
+.demo-clean .demo-footer{color:#3d6974}
+
+/* Precision Home Services: bold trades aesthetic */
+.demo-fix{color:#1d2d33;background:#f3efe8;font-family:Arial,sans-serif}
+.demo-fix .demo-nav{background:#162a31;color:white;min-height:92px}
+.demo-fix .demo-brand{font:900 26px Arial;letter-spacing:-1px}
+.demo-fix .demo-brand span{display:block;font:800 10px Arial;letter-spacing:3px;color:#e69b61;margin-top:3px}
+.demo-fix .demo-nav-links{color:#dce2e3}
+.demo-fix .demo-cta{background:#e29a65;color:#182c32}
+.demo-fix .demo-hero{min-height:600px;position:relative;display:flex;align-items:center;background:linear-gradient(90deg,#0b1b1fe9,#0d2321ac 46%,transparent 90%),url("demo-handyman.jpg") center/cover;color:white}
+.demo-fix .demo-hero-kicker{font:800 12px Arial;letter-spacing:3px;color:#e7a775}
+.demo-fix .demo-hero h1{font:900 clamp(59px,7.6vw,108px)/.96 Arial;max-width:780px;letter-spacing:-4px;text-transform:uppercase;margin:21px 0}
+.demo-fix .demo-hero h1 span{color:#eea46b}
+.demo-fix .demo-hero p:not(.demo-hero-kicker){font:18px/1.6 Arial;color:#e4e9e7;max-width:550px;margin-bottom:31px}
+.demo-fix .demo-service-grid article{background:#ffffff;border-top:5px solid #de955c}
+.demo-fix .demo-services h2{font:900 clamp(32px,4vw,49px) Arial;letter-spacing:-1.5px;text-transform:uppercase}
+.demo-fix .demo-service-grid h3{font:800 21px Arial}
+.demo-fix .demo-service-grid b{color:#c77e46}
+.demo-fix .demo-footer{background:#162a31;color:#dbe3e2}
+@media(max-width:900px){.demo-nav-links a:not(.demo-cta){display:none}.demo-clean .demo-hero-layout{grid-template-columns:1fr;gap:30px}.demo-clean .demo-hero-img{height:350px;border-radius:20px}.demo-clean .demo-hero{padding:45px 0 55px}}
+@media(max-width:640px){.demo-banner{font-size:9px;letter-spacing:.5px}.demo-banner .demo-wrap{display:block}.demo-banner a{display:block;margin-top:5px}.demo-nav{min-height:76px}.demo-brand{font-size:19px!important}.demo-nav-links .demo-cta{padding:12px 10px;font-size:10px}.demo-land .demo-hero,.demo-fix .demo-hero{min-height:510px;height:auto;padding:55px 0}.demo-land .demo-hero h1,.demo-fix .demo-hero h1{font-size:clamp(49px,12vw,70px);letter-spacing:-2px}.demo-clean .demo-hero h1{font-size:clamp(49px,12vw,75px);letter-spacing:-2px}.demo-service-grid{grid-template-columns:1fr}.demo-services{padding:45px 0 55px}}

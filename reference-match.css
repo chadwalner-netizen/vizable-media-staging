@@ -1,0 +1,187 @@
+/* The home page faithfully follows Chad's approved Nov 17 reference design.
+   This file also provides the shared header used by all six primary pages. */
+:root { --ref-navy:#042538; --ref-coral:#ff634e; --ref-aqua:#ddfaf7; }
+body.reference-home { background:var(--ref-aqua); color:#071e35; font-family:Arial,Helvetica,sans-serif; }
+
+/* Shared branded header: circular VM, divider, wordmark and italic tagline. */
+body > header.ref-site-header { position:sticky; z-index:50; top:0; height:77px; background:linear-gradient(105deg,#06283d,#021e30); border-bottom:1px solid #ffffff4c; color:#fff; }
+.ref-header-inner { width:calc(100% - 96px); max-width:1110px; height:100%; margin:auto; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+.ref-brand { display:flex; align-items:center; gap:14px; min-width:0; color:white; white-space:nowrap; }
+.ref-brand img { display:block; flex:0 0 94px; width:94px; height:70px; object-fit:contain; }
+.ref-brand-rule { display:block; flex:0 0 3px; width:3px; height:59px; background:#ff624b; }
+.ref-brand-type { display:flex; flex-direction:column; gap:3px; }
+.ref-brand-type strong { font:900 39px/1 Arial,Helvetica,sans-serif; letter-spacing:-1.3px; }
+.ref-brand-type em { color:var(--ref-coral); font-style:normal; }
+.ref-brand-type small { padding-left:2px; font:italic 700 12.4px/1.15 Arial,Helvetica,sans-serif; color:#f1f4f5; letter-spacing:-.3px; }
+header .ref-nav { position:static; display:flex; align-items:center; gap:32px; padding:0; background:none; flex-shrink:0; }
+header .ref-nav a { padding:0 0 5px; border:0; color:#f6fbff; font:700 16px/1.2 Arial,Helvetica,sans-serif; white-space:nowrap; }
+header .ref-nav a:hover,header .ref-nav a.active,header .ref-nav a[aria-current="page"] { color:#ff735f; border:0; border-bottom:2px solid #ff735f; }
+header .ref-menu-button { display:none; }
+
+/* Reference hero, including the approved laptop / phone composition. */
+.ref-hero { min-height:367px; overflow:hidden; color:white; background:linear-gradient(110deg,#00263a,#004451 65%,#00253c); }
+.ref-hero-inner { position:relative; max-width:1199px; height:367px; margin:0 auto; }
+.ref-hero-copy { position:relative; z-index:2; padding:33px 0 30px 65px; max-width:565px; }
+.ref-hero h1 { margin:0; font:900 48px/1.13 Arial,Helvetica,sans-serif; letter-spacing:-1.8px; }
+.ref-hero h1 em { display:block; color:var(--ref-coral); font-style:italic; white-space:nowrap; }
+.ref-hero-copy p { font:19.5px/1.32 Arial,Helvetica,sans-serif; max-width:510px; margin:18px 0 22px; color:#fff; }
+.ref-button { display:inline-flex; align-items:center; justify-content:center; gap:9px; border:0; border-radius:12px; color:white; background:#ff634e; font:800 19px/1.25 Arial,Helvetica,sans-serif; box-shadow:0 6px 18px #002b3824; transition:background .2s,transform .2s; }
+.ref-button:hover { background:#e9503c; transform:translateY(-2px); }
+.ref-hero-cta { width:380px; min-height:57px; padding:12px 17px; }
+.ref-hero-art { position:absolute; z-index:1; top:0; right:0; height:367px; width:725px; background-image:url('homepage-design-reference.png'); background-repeat:no-repeat; background-size:1199px 1312px; background-position:right -77px; -webkit-mask-image:linear-gradient(to right,transparent 0%,transparent 13%,#000 27%); mask-image:linear-gradient(to right,transparent 0%,transparent 13%,#000 27%); }
+
+/* Bright aqua samples on white cards, matching the attached composition. */
+.ref-wrap { width:calc(100% - 100px); max-width:1100px; margin:0 auto; }
+.ref-showcase,.ref-pricing { background:radial-gradient(ellipse at 50% 30%,#e3fffc 0%,#dcf9f6 62%,#d7f4f2 100%); }
+.ref-showcase { padding:11px 0 14px; }
+.ref-section-title { display:flex; justify-content:center; align-items:center; gap:24px; margin:0 auto; text-align:center; }
+.ref-section-title>span { height:3px; width:167px; background:#ff694f; flex:0 1 167px; }
+.ref-section-title h2 { margin:0; color:#071e35; font:900 36px/1.15 Arial,Helvetica,sans-serif; letter-spacing:-1px; white-space:nowrap; }
+.ref-section-subtitle { margin:7px 0 25px; font:18px/1.25 Arial,Helvetica,sans-serif; color:#071e35; text-align:center; }
+.ref-sample-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:21px; }
+.ref-sample-card { display:flex; flex-direction:column; min-width:0; padding:8px 8px 13px; min-height:311px; background:#fbfdfd; border:1px solid #d2e7e5; border-radius:18px; box-shadow:0 8px 14px #193e4730; color:#061d35; transition:transform .2s,box-shadow .2s; }
+.ref-sample-card:hover { transform:translateY(-4px); box-shadow:0 12px 20px #163c4535; }
+.ref-sample-thumb { display:block; width:100%; height:189px; flex:0 0 189px; border-radius:11px; overflow:hidden; background-image:url('homepage-design-reference.png'); background-repeat:no-repeat; background-size:359% auto; }
+.ref-thumb-land { background-position:6.85% 49.6%; }
+.ref-thumb-clean { background-position:49.8% 49.6%; }
+.ref-thumb-fix { background-position:93.1% 49.6%; }
+.ref-sample-info { display:flex; align-items:center; gap:13px; min-height:62px; padding:10px 9px 1px; }
+.ref-card-icon { flex:0 0 42px; width:42px; height:42px; fill:none; stroke-width:2.8; stroke-linecap:round; stroke-linejoin:round; }
+.ref-icon-plant { stroke:#02512b; }
+.ref-icon-house { stroke:#0986ef; }
+.ref-icon-wrench { stroke:#ff4e30; }
+.ref-sample-info span { min-width:0; }
+.ref-sample-info strong { display:block; color:#071b35; font:800 clamp(15px,1.5vw,19px)/1.18 Arial,Helvetica,sans-serif; letter-spacing:-.5px; white-space:nowrap; }
+.ref-sample-info small { display:block; color:#0e2035; font:14px/1.22 Arial,Helvetica,sans-serif; margin-top:2px; white-space:nowrap; }
+.ref-view-button { align-self:center; display:inline-flex; align-items:center; justify-content:center; margin-top:auto; border:1.6px solid #ff4b35; color:#f54429; border-radius:8px; padding:7px 21px; min-width:157px; font:700 15px/1.1 Arial,Helvetica,sans-serif; }
+.ref-view-button b { font-size:22px; line-height:13px; margin-left:5px; font-weight:400; }
+.ref-sample-card:hover .ref-view-button { background:#ff634e; color:white; }
+
+/* The three prominent monthly packages match the reference. */
+.ref-pricing { padding:9px 0 15px; }
+.ref-pricing .ref-section-title>span { width:113px; flex-basis:113px; }
+.ref-pricing .ref-section-subtitle { margin:6px 0 34px; }
+.ref-pricing-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; max-width:1007px; margin:0 auto; }
+.ref-price-card { position:relative; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:135px; padding:12px; background:linear-gradient(#fff,#fbfefe); color:#071e35; border:1px solid #d6e6e7; border-radius:19px; box-shadow:0 7px 13px #24505b25; }
+.ref-price-card>strong { font:800 23px/1.15 Arial,Helvetica,sans-serif; letter-spacing:-.8px; }
+.ref-price { display:flex; align-items:baseline; color:#ff5035; line-height:1.02; margin:6px 0 4px; }
+.ref-price b { font:900 45px/1 Arial,Helvetica,sans-serif; letter-spacing:-1px; }
+.ref-price small { font:800 20px/1 Arial,Helvetica,sans-serif; }
+.ref-price-card>span:last-child { font:18px/1.2 Arial,Helvetica,sans-serif; }
+.ref-price-popular { border:2px solid #ff553d; }
+.ref-popular-label { position:absolute; top:-21px; left:50%; transform:translateX(-50%); white-space:nowrap; padding:8px 20px; border-radius:30px; color:white; background:#ff624d; font:800 14px/1 Arial,Helvetica,sans-serif; }
+.ref-price-note { margin:9px 0 0; text-align:center; color:#496973; font:11px/1.3 Arial,Helvetica,sans-serif; }
+.ref-price-note a { text-decoration:underline; color:#ad4834; }
+
+/* The navy founder ribbon uses Chad's real portrait. */
+.ref-founder { background:linear-gradient(100deg,#042538,#062b3e); color:white; }
+.ref-founder-row { display:grid; grid-template-columns:150px 3px minmax(0,1fr) 343px; align-items:center; gap:27px; min-height:164px; }
+.ref-founder-photo { display:block; width:146px; height:146px; object-fit:cover; object-position:50% 43%; border-radius:50%; border:3px solid #fff; background:#061d31; }
+.ref-founder-rule { width:3px; height:105px; background:#ff644f; }
+.ref-founder-copy h2 { color:white; font:900 29px/1.15 Arial,Helvetica,sans-serif; margin:0 0 9px; letter-spacing:-.6px; }
+.ref-founder-copy p { font:16.5px/1.35 Arial,Helvetica,sans-serif; color:#f1f7f9; margin:0; max-width:540px; }
+.ref-founder-cta { font-size:19px; min-height:58px; padding:12px 17px; white-space:nowrap; }
+
+/* Existing page footers and interior pages keep the shared navy/seafoam system. */
+body.reference-home>footer { background:#041d30; }
+
+@media(max-width:1199px) and (min-width:901px) {
+  .ref-hero { min-height:30.6vw; }
+  .ref-hero-inner { height:30.6vw; }
+  .ref-hero-art { height:30.6vw; width:60.5%; background-size:100vw auto; background-position:right -6.42vw; }
+  .ref-hero-copy { padding-top:2.8vw; padding-left:5.4vw; }
+  .ref-hero h1 { font-size:4.17vw; }
+  .ref-hero-copy p { font-size:1.65vw; margin:1.5vw 0 2vw; }
+  .ref-hero-cta { width:31.7vw; min-height:4.8vw; font-size:1.6vw; }
+  .ref-header-inner { width:94%; }
+  .ref-brand { gap:9px; }
+  .ref-brand img { flex-basis:75px; width:75px; }
+  .ref-brand-type strong { font-size:32px; }
+  header .ref-nav { gap:19px; }
+  header .ref-nav a { font-size:15px; }
+  .ref-wrap { width:92%; }
+}
+@media(max-width:1020px) {
+  body > header.ref-site-header { height:74px; }
+  .ref-header-inner { width:92%; }
+  .ref-brand img { width:82px; height:62px; flex-basis:82px; }
+  .ref-brand-rule { height:52px; }
+  .ref-brand-type strong { font-size:32px; }
+  .ref-brand-type small { font-size:11px; }
+  header .ref-menu-button { display:block; padding:6px 13px; border:1px solid #ffffff7a; border-radius:7px; color:white; background:transparent; font-size:25px; cursor:pointer; }
+  header .ref-nav { position:absolute; top:74px; left:0; right:0; display:none; flex-direction:column; align-items:stretch; gap:0; padding:15px 6% 20px; background:#05263a; box-shadow:0 12px 22px #071b2d39; }
+  header .ref-nav.open { display:flex; }
+  header .ref-nav a { padding:12px 4px; }
+  header .ref-nav a.active { border-bottom:1px solid #ff735f; }
+}
+@media(max-width:900px) {
+  .ref-hero-inner { height:auto; display:flex; flex-direction:column; }
+  .ref-hero-copy { padding:46px 6% 18px; max-width:none; }
+  .ref-hero h1 { font-size:clamp(36px,6vw,52px); }
+  .ref-hero-copy p { font-size:19px; }
+  .ref-hero-art { position:relative; width:100%; height:300px; background-size:980px auto; background-position:right -66px; -webkit-mask-image:none; mask-image:none; }
+  .ref-wrap { width:92%; }
+  .ref-sample-grid { gap:13px; }
+  .ref-sample-card { min-height:0; }
+  .ref-sample-thumb { height:155px; flex-basis:155px; }
+  .ref-sample-info { gap:5px; padding-left:2px; padding-right:2px; }
+  .ref-card-icon { width:26px; height:26px; flex-basis:26px; }
+  .ref-sample-info strong { font-size:15px; white-space:normal; }
+  .ref-sample-info small { font-size:11px; white-space:normal; }
+  .ref-founder-row { grid-template-columns:110px 3px 1fr; gap:15px; padding:20px 0; }
+  .ref-founder-photo { width:108px; height:108px; }
+  .ref-founder-copy h2 { font-size:25px; }
+  .ref-founder-copy p { font-size:15px; }
+  .ref-founder-cta { grid-column:3; justify-self:start; min-height:42px; font-size:15px; }
+}
+@media(max-width:660px) {
+  .ref-hero-copy { padding:38px 5% 16px; }
+  .ref-hero h1 { font-size:clamp(34px,8vw,47px); }
+  .ref-hero h1 em { white-space:normal; }
+  .ref-hero-copy p { font-size:17px; }
+  .ref-wide-only { display:none; }
+  .ref-hero-cta { width:auto; min-height:53px; padding:12px 18px; font-size:16px; }
+  .ref-hero-art { height:240px; background-size:800px auto; background-position:right -53px; }
+  .ref-section-title h2 { font-size:29px; white-space:normal; }
+  .ref-section-title>span,.ref-pricing .ref-section-title>span { width:40px; flex-basis:40px; }
+  .ref-section-title { gap:11px; }
+  .ref-section-subtitle { font-size:15px; margin-bottom:22px; }
+  .ref-showcase { padding:27px 0 30px; }
+  .ref-sample-grid { display:flex; flex-direction:column; gap:22px; max-width:420px; margin:0 auto; }
+  .ref-sample-card { min-height:300px; }
+  .ref-sample-thumb { height:197px; flex-basis:197px; }
+  .ref-card-icon { width:39px; height:39px; flex-basis:39px; }
+  .ref-sample-info { gap:12px; padding:9px 8px 2px; }
+  .ref-sample-info strong { font-size:18px; }
+  .ref-sample-info small { font-size:13px; }
+  .ref-pricing { padding:24px 0; }
+  .ref-pricing .ref-section-subtitle { margin-bottom:25px; }
+  .ref-pricing-grid { grid-template-columns:1fr; max-width:410px; gap:31px; }
+  .ref-price-card { min-height:120px; }
+  .ref-founder-row { grid-template-columns:92px 1fr; gap:14px; padding:23px 0 27px; }
+  .ref-founder-photo { width:92px; height:92px; }
+  .ref-founder-rule { display:none; }
+  .ref-founder-copy h2 { font-size:23px; }
+  .ref-founder-copy p { font-size:14px; }
+  .ref-founder-cta { grid-column:1/-1; justify-self:stretch; width:100%; }
+}
+@media(max-width:430px) {
+  .ref-brand { gap:7px; }
+  .ref-brand img { width:62px; height:50px; flex-basis:62px; }
+  .ref-brand-rule { height:42px; width:2px; flex-basis:2px; }
+  .ref-brand-type strong { font-size:26px; }
+  .ref-brand-type small { font-size:8.5px; }
+  .ref-hero-art { height:208px; background-size:720px auto; background-position:right -48px; }
+  .ref-sample-thumb { height:177px; flex-basis:177px; }
+  .ref-sample-info strong { font-size:16px; }
+}
+@media(prefers-reduced-motion:reduce) { .ref-button,.ref-sample-card { transition:none; } }
+
+/* Finished portfolio thumbnails and understated disclosure */
+.ref-thumb-palm-stone,.ref-thumb-harborview,.ref-thumb-lumiere { background-size:cover; background-position:center top; background-repeat:no-repeat; }
+.ref-thumb-palm-stone { background-image:url('portfolio-thumb-palm-stone.jpg'); }
+.ref-thumb-harborview { background-image:url('portfolio-thumb-harborview.jpg'); }
+.ref-thumb-lumiere { background-image:url('portfolio-thumb-lumiere.jpg'); }
+.ref-icon-account { stroke:#1b6b9a; }
+.ref-icon-spa { stroke:#b28a42; }
+.ref-portfolio-disclosure { text-align:center; font:12px/1.45 Arial,Helvetica,sans-serif; color:#54676b; margin:17px 12px 3px; }

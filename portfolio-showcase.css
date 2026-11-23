@@ -1,0 +1,13 @@
+/* Portfolio integration — isolated to Our Work. Other approved pages unchanged. */
+.vm-live-portfolio{gap:clamp(16px,2.4vw,34px);align-items:stretch}
+.vm-live-example{background:rgba(255,255,255,.95);border:1px solid rgba(4,48,69,.12);border-radius:17px;padding:14px 14px 22px;box-shadow:0 15px 34px rgba(0,28,47,.13);overflow:hidden;transition:transform .2s,box-shadow .2s}
+.vm-live-example:hover{transform:translateY(-5px);box-shadow:0 21px 40px rgba(0,28,47,.22)}
+.vm-live-preview{width:100%;aspect-ratio:5/3;overflow:hidden;border-radius:11px;position:relative;background:#102b35}
+.vm-live-preview img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
+.vm-live-example:hover .vm-live-preview img{transform:scale(1.035)}
+.vm-live-chip{position:absolute;top:12px;left:12px;padding:8px 11px;border-radius:6px;background:rgba(3,30,46,.89);color:#fff;font:800 11px/1 Arial,sans-serif;letter-spacing:1.1px}
+.vm-live-example strong{margin:18px 0 8px;font-size:clamp(20px,1.7vw,25px);line-height:1.2}
+.vm-live-example small{font-size:14px;line-height:1.45;min-height:42px}
+.vm-live-example>span:last-child{margin-top:auto;transform:translateY(12px);font-size:15px;padding:11px 20px}
+.vm-portfolio-disclosure{text-align:center;color:#fff;max-width:850px;margin:26px auto 0;padding:0 18px;font:14px/1.6 Arial,sans-serif}
+@media(max-width:850px){.vm-live-portfolio{grid-template-columns:1fr;max-width:520px;gap:23px}.vm-live-example strong{font-size:23px}.vm-live-example small{min-height:0}}
