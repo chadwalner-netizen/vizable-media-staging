@@ -254,3 +254,9 @@ body{background:#fffdfa}
   .form-heading .form-icon{margin:0 auto;width:44px;height:44px;flex:0 0 44px;}
   .form-heading p{text-align:center;margin:12px auto 0;max-width:30ch;line-height:1.4;}
 }
+
+/* Final approved Services-card alignment: headings, icons, descriptions and buttons. */
+.cards .card h2{justify-content:center;text-align:center;}
+.cards .card h2 .service-icon{flex-shrink:0;}
+.cards .card p{text-align:center;max-width:38ch;margin-left:auto;margin-right:auto;}
+.cards .card .btn{align-self:center;text-align:center;}
