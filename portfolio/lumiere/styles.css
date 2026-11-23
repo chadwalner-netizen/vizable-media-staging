@@ -290,3 +290,37 @@ body:has(.contact-main) .contact-main{padding-bottom:60px}
  .closing-brand .lotus-svg{width:78px;height:78px;}
  .closing-message h2{font-size:27px;}
 }
+
+
+/* Nov 23 final Lumiere mobile refinement. Preserve editorial left-aligned body copy. */
+@media (max-width:800px){
+  /* Keep the model visible in both photo-led hero sections. */
+  .hero-photo{background-position:64% center;}
+  .treat-hero-image{background-position:64% center;}
+  /* Tighten the end of the treatment section without a double dividing band. */
+  .treatment-intro{padding-bottom:0!important;border-bottom:0!important;}
+  .treatment-intro>.wrap{padding-bottom:24px;}
+  .treatment-list{margin-bottom:0!important;padding-bottom:0!important;}
+  .treat-cta{margin-top:0!important;border-top:0!important;}
+  .treatment-copy .treat-number,.treatment-copy h3{text-align:center;align-self:center;}
+  .treatment-copy .treatment-tags{justify-content:center;align-self:center;}
+  .treatment-copy>p{text-align:left;}
+  .treatment-copy>.button{align-self:center;text-align:center;}
+  /* The return link should follow the footer instead of covering content. */
+  .vm-portfolio-return{position:static!important;display:table;margin:12px auto 20px!important;max-width:calc(100% - 28px);}
+  .closing{min-height:0!important;gap:0;}
+  .closing-message{padding-bottom:10px;}
+  .closing-message p{margin-bottom:10px;}
+  body:has(.contact-main) .closing-message .button{margin-top:10px;margin-bottom:12px;}
+  body:has(.contact-main) .closing-message p{margin-bottom:10px;}
+  footer{padding-top:12px;padding-bottom:12px;}
+}
+@media (max-width:570px){
+  .panel-topline{justify-content:center;gap:10px;}
+  .panel-topline .contact-icon{display:none;}
+  .contact-form-panel h3,.contact-form-panel .form-intro{text-align:center;}
+  .contact-side-content>.eyebrow,.contact-side-content>h3,.contact-side-content>p{text-align:center;}
+  .treatment-copy .treatment-tags{margin-left:auto;margin-right:auto;}
+  .treat-cta{padding-top:38px;padding-bottom:44px;}
+  .closing-brand{padding-bottom:6px;}
+}

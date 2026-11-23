@@ -118,3 +118,19 @@ body{font-size:18px;line-height:1.58}
  .area h2{text-align:center;}
  .area ul{text-align:left;}
 }
+
+/* Palm & Stone final homepage mobile refinement — Nov 23.
+   Scope intentionally limited to the homepage's outdoor-space split section. */
+@media (max-width: 560px) {
+  .home + .services-strip + .section .split > div { text-align: center; }
+  .home + .services-strip + .section .split h2 { text-align: center; }
+  .home + .services-strip + .section .split .accent { margin-left: auto; margin-right: auto; }
+  .home + .services-strip + .section .split p { text-align: center; }
+  .home + .services-strip + .section .split .checks {
+    display: table;
+    margin: 20px auto 24px;
+    text-align: left;
+  }
+  .home + .services-strip + .section .split .checks li { text-align: left; }
+  .home + .services-strip + .section .split .btn { margin-left: auto; margin-right: auto; }
+}
