@@ -1,0 +1,1 @@
+document.getElementById('demo-form')?.addEventListener('submit',function(event){event.preventDefault();if(!this.reportValidity())return;const message=document.getElementById('form-feedback');message.classList.add('show');message.scrollIntoView({behavior:'smooth',block:'nearest'});this.reset();});
