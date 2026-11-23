@@ -324,3 +324,22 @@ body:has(.contact-main) .contact-main{padding-bottom:60px}
   .treat-cta{padding-top:38px;padding-bottom:44px;}
   .closing-brand{padding-bottom:6px;}
 }
+
+/* Nov 23 follow-up: three focused Lumiere mobile spacing fixes. */
+@media (max-width:800px) {
+  /* Let each treatment photograph meet the card's gold outline directly. */
+  .treatment-detail { padding:0!important; row-gap:0!important; align-content:start; }
+  .treatment-detail .treatment-image { display:block; margin:0!important; padding:0!important; min-height:0!important; height:260px; max-height:none!important; line-height:0; overflow:hidden; }
+  .treatment-detail .treatment-image img { display:block; width:100%; height:100%; min-height:0!important; max-height:none!important; margin:0!important; padding:0!important; object-fit:cover; }
+  /* Remove the dark spacer before the photographic closing invitation. */
+  .treatment-intro { padding-bottom:0!important; }
+  .treatment-intro>.wrap { padding-bottom:0!important; }
+  .treatment-list { margin-bottom:0!important; padding-bottom:0!important; }
+  .treat-cta { margin-top:0!important; border-top:1px solid #8d6536!important; background-position:center center; }
+  /* Make the footer consultation action breathe below its introductory copy. */
+  .closing-message p { margin-bottom:22px!important; }
+  .closing-message .button { margin-top:0!important; }
+}
+@media (max-width:570px) {
+  .treatment-detail .treatment-image { height:240px; }
+}
