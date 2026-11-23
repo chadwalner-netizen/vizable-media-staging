@@ -99,3 +99,22 @@ body{font-size:18px;line-height:1.58}
 .section .split img{box-shadow:0 9px 24px rgba(0,35,20,.13)}
 @media(max-width:850px){.services-strip img{width:35px;height:35px}}
 @media(max-width:560px){.services-strip img{width:31px;height:31px}.hero.home{background-position:61% center}}
+
+/* Nov 23: mobile portfolio alignment refinements; desktop preserved. */
+@media (max-width: 560px) {
+ .hero .hero-content{text-align:center;}
+ .hero h1,.hero p{margin-left:auto;margin-right:auto;}
+ .hero .accent{margin:0 auto 30px;max-width:80%;}
+ .hero.home .actions{flex-direction:column;align-items:center;gap:13px;margin-top:32px;}
+ .hero.home .actions .btn{width:min(100%,290px);text-align:center;}
+ .card h3{display:flex;align-items:center;justify-content:center;text-align:center;gap:8px;padding:13px 12px;}
+ .card h3 .symbol{margin-right:0;flex:none;}
+ .card p{text-align:center;padding:15px 18px 23px;}
+ .cta-inner{align-items:center;text-align:center;}
+ .cta-inner>div{width:100%;}
+ .cta-inner .btn{max-width:100%;text-align:center;}
+ .form-head{text-align:center;}
+ .form-head h2{line-height:1.2;margin-bottom:8px;}
+ .area h2{text-align:center;}
+ .area ul{text-align:left;}
+}
